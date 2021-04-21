@@ -1,0 +1,382 @@
+body {
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+	height: 2000px ;
+	background-color: #E9F7FA !important;
+	overflow-x: hidden !important;
+}
+
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #40424a;
+	margin: 0;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+h2 {
+	color: #808181;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+p {
+	font-size: 18px;
+	color: #808181;
+	line-height: 1.8;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+/* Basic media queries */
+
+.mob{
+	display: block;
+}
+
+.desk{
+	display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.mob{
+		display: block !important;
+	}
+
+	.desk{
+		display: none !important;
+	}
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.mob{
+		display: none;
+	}
+
+	.desk{
+		display: block;
+	}
+
+	.arrow{
+		margin-top: 50px !important;
+	}
+}
+
+/*---------------------
+	Helper CSS
+-----------------------*/
+.spad {
+	padding-top: 60px;
+	padding-bottom: 110px;
+}
+
+.section-title h2 {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 110px;
+	padding-bottom: 2px;
+	line-height: normal;
+}
+
+.section-title h2:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	background: #40424a;
+}
+
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*------------------------
+  	Nav
+--------------------------*/
+.navbar {
+	background-color: #E9F7FA ;
+	filter: drop-shadow(0px 10px 10px rgb(0,0,0,.25));
+	position: fixed !important;
+	width: 100%;
+	z-index: 999 !important;
+}
+
+.social-links .fa{
+	padding: 10px;
+	font-size: 32px;
+	color: #000;
+}
+
+.social-links .fa:hover{
+	color: #505050;
+}
+
+/*------------------------
+  Common Elements
+--------------------------*/
+
+/* Preloder */
+#preloder {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #fff;
+}
+
+.loader {
+	width: 30px;
+	height: 30px;
+	border: 3px solid #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	border-left-color: transparent;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+/*------------------------
+  		Hero Landing
+--------------------------*/
+
+.hero-banner{
+	position: relative;
+	top: 150px;
+}
+.hero-banner h1{
+	color: #000;
+	font-size: 77px;
+	filter: drop-shadow(0px 7px 4px rgb(0,0,0,.25));
+}
+
+.hero-banner h2{
+	filter: drop-shadow(0px 7px 4px rgb(0,0,0,.15));
+}
+
+
+/* Arrow */
+.arrow {
+  text-align: center;
+	margin-top: 50px;
+
+}
+.arrow a{
+	color: #000;
+}
+
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*------------------------
+  		Project Landing
+--------------------------*/
+
+.project-bg{
+	background-color: #EEEEEE;
+	border-radius: 10px;
+	filter: drop-shadow(0px 7px 4px rgb(0,0,0,.25));
+	position: relative;
+	top: 200px;
+}
+
+.project-copy{
+	padding-top: 50px
+}
+
+.project-bg h1{
+	font-size: 50px;
+	filter: drop-shadow(0px 7px 4px rgb(0,0,0,.25));
+}
+
+.project-bg h2{
+	font-size: 20px;
+}
+
+.project-btn button{
+	width: 70%;
+}
+
+.cody h2{
+	margin-top: -120px
+}
+
+.mac-mock{
+	background-repeat: no-repeat;
+	height:35vh;
+	background-size: contain;
+	background-position: center center;
+	background-image: url(../img/mac-mock.png);
+	transition: .25s ease-in-out
+}
+.mac-mock:hover {
+	background-image: url(../img/ladder-landing-mock.png);
+}
+
+.cody-mock{
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: contain;
+	background-position: center center;
+	background-image: url(../img/cody-mock.png);
+	transition: .25s ease-in-out
+}
+
+.turtle-sprite{
+	background-repeat: no-repeat;
+	height:35vh;
+	background-size: contain;
+	background-position: center center;
+	background-image: url(../img/turtle-idle.png);
+	transition: .25s ease-in-out
+
+}
+
+.turtle-sprite:hover{
+	background-image: url(../img/turtle-active.png);
+}
+
+.self{
+	background-repeat: no-repeat;
+	height:40vh;
+	background-size: contain;
+	background-position: center center;
+	background-image: url(../img/self.jpg);
+	transition: .25s ease-in-out
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.cody h2{
+		margin-top: -100px
+	}
+	.cody{
+		height: 1110px !important;
+	}
+	.self{
+		height: 70vh;
+	}
+	.cody-mock{
+		height: 80vh;
+	}
+	.project-bg h1{
+		font-size: 96px;
+	}
+	.mac-mock{
+		height: 60vh;
+		margin-right: -26px;
+		background-image: url(../img/half-mac-mock.png);
+	}
+	.mac-mock:hover {
+		background-image: url(../img/half-ladder-landing-mock.png);
+	}
+}
+/*------------------------
+  		Buttons
+--------------------------*/
+
+button {
+	filter: drop-shadow(0px 7px 4px rgb(0,0,0,.1));
+	border: none;
+	padding: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #fff  ;
+	transition: .25s ease-in-out;
+}
+
+button:hover{
+	filter: drop-shadow(0px 7px 4px rgb(0,0,0,.25));
+}
