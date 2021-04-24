@@ -1,1 +1,1 @@
-# To view live site vist: [www.apclark.org](www.apclark.org)
+# To view live site visit: [www.apclark.org](www.apclark.org)
