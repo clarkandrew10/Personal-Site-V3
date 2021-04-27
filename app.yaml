@@ -6,12 +6,12 @@ threadsafe: true
 handlers:
 - url: /css
   static_dir: css
+- url: /dist
+  static_dir: dist
 - url: /js
   static_dir: js
 - url: /img
   static_dir: img
-- url: /icon-fonts
-  static_dir: icon-fonts
 - url: /.*
   script: main.app
 
