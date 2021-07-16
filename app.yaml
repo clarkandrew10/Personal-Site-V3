@@ -4,10 +4,37 @@ api_version: 1
 threadsafe: true
 
 handlers:
+
 - url: /css
   static_dir: css
+
+- url: /(.*\.woff)
+  mime_type: application/x-font-woff
+  static_files: fonts/\1
+  upload: fonts/(.*\.woff)
+
+- url: /(.*\.ttf)
+  mime_type: font/truetype
+  static_files: fonts/\1
+  upload: fonts/(.*\.ttf)
+
+- url: /(.*\.otf)
+  mime_type: font/opentype
+  static_files: fonts/\1
+  upload: fonts/(.*\.otf)
+
+- url: /fonts
+  static_files: fonts/\1
+  upload: fonts/(.*)
+
+- url: /fonts
+  static_dir: fonts
+- url: /work
+  static_dir: work
 - url: /dist
   static_dir: dist
+- url: /includes
+  static_dir: includes
 - url: /js
   static_dir: js
 - url: /img

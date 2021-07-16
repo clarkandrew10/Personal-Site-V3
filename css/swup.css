@@ -1,0 +1,59 @@
+/*
+body {
+  overflow-x: hidden;
+  -webkit-animation: 1s ease 0s normal forwards 1 fadein;
+    animation: 1s ease 0s normal forwards 1 fadein;
+}
+html {
+scroll-behavior: smooth;
+}
+
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+.transition-fade {
+  opacity: 1;
+  transition: 1000ms;
+  /*transform-origin: left;*/
+}
+
+/*html.is-animating .transition-fade {
+  opacity: 1;
+  
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+
+}
+
+.transition-swipe {
+  transition: 1500ms;
+
+}
+
+html.is-animating .transition-swipe {
+  
+  opacity: 1;
+}*/
+.transition-fade {
+  transition: 1.5s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  transition-delay: .7s;
+  /*transition: 1s;*/
+  opacity: 0;
+}
