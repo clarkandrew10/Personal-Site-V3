@@ -36,213 +36,242 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <script>
-$(function() {
+    $(function() {
     $("#nav").load("/includes/nav.html");
     $("#footer").load("/includes/footer.html");
     $("#social-links").load("/includes/social-links.html");
+
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 100,
+        backSpeed: 150,
+        smartBackspace: true, // this is a default
+        loop: true
+  });
 });
 </script>
+<div id="typed-strings">
+    <p>Hi, I'm <br>Andrew^2000</p>
+    <p>Hi, I'm glad <br>your he</p>
+    <p>Hi, I'm glad <br>you're here <br>:)</p>
+    <p>Hi, I'm a <br>coffee lover ^1000 ☕️</p>
+    <p>Hi, I'm a <br>home chef ^1000 🥘</p>
+</div>
 <div id="nav"></div>
 <main id="swup" class="transition-fade">
-<section>
-    <!-- Hero Start-->
-    <div class="row">
-        <div class="hero-banner">
-            <div class="col-10 offset-1 text-center">
-                <img src="img/self-coin.png" height="120" width="120">
-                <h1>Hi, I'm
-                    <span class="txt-rotate" data-period="2000" data-rotate='[ "Andrew", "a coffee addict", "a home chef"]'></span>
-                </h1>
-                <h2><em>Amateur Web Developer</em></h2>
-                <div class="col-7 offset-5">
-                    <div id="social-links"></div>
-                </div>
-                <div class="arrow bounce">
-                    <span class="fa fa-arrow-down fa-2x" style="color:white"></span>
+    <section>
+        <!-- Hero Start-->
+        <div class="row">
+            <div class="hero-banner">
+                <div class="col-10 offset-1 text-center">
+                    <img src="img/self-coin.png" height="120" width="120">
+                    <h1>
+                        <span id="typed"></span>
+                    </h1>
+                    <h2><em>Amateur Web Developer</em></h2>
+                    <div class="col-7 offset-5">
+                        <div id="social-links"></div>
+                    </div>
+                    <div class="arrow bounce">
+                        <span class="fa fa-arrow-down fa-2x" style="color:white"></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section> <!-- Hero End-->
-<section>
-    <!-- FORT Start-->
-    <div class="row pt-5">
-        <div class="col-md-10 offset-md-1">
-            <a href="/work/fort-group.html">
-                <div class="project-bg red-frame">
-                    <div class="row">
-                        <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
-                            <div class="project-header pt-md-5">
-                                <h3 class="text-md-left">The FORT Group</h3>
-                            </div>
-                            <div class="project-sub pt-md-3">
-                                <h2 class="text-md-left">Web Development & Project Management Internship</h2>
-                            </div>
-                            <div class="row justify-content-center justify-content-md-start">
-                                <div class="skill-pill">Word Press</div>
-                                <div class="skill-pill">Dashboard</div>
-                                <div class="skill-pill">Node.JS</div>
-                            </div>
-                        </div>
-                        <div class="col-12 py-4 px-4  col-md-6 offset-md-0">
-                            <img src="img/fort-banner.png" alt="">
+    </section> <!-- Hero End-->
+    <!--     <section>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-4 col-10 offset-1 offset-md-0">
+                <a href="/playground.html">
+                    <div class="project-bg purple-frame ">
+                        <div class="project-header text-center ">
+                            <h3 class="text-md-left">One-Offs <i class="fas fa-dice"></i></h3>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
-    </div>
-</section> <!-- FORT End-->
-<section>
-    <!-- SBDC Start-->
-    <div class="row pt-5">
-        <div class="col-md-10 offset-md-1">
-            <a href="/work/sbdc.html">
-                <div class="project-bg light-blue-frame">
-                    <div class="row">
-                        <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
-                            <div class="project-header pt-md-5">
-                                <h3 class="text-md-left" style="font-size: 50px">Small Business Development Center</h3>
+    </section> -->
+    <section>
+        <!-- FORT Start-->
+        <div class="row pt-5">
+            <div class="col-md-10 offset-md-1">
+                <a href="/work/fort-group.html">
+                    <div class="project-bg red-frame">
+                        <div class="row">
+                            <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
+                                <div class="project-header pt-md-5">
+                                    <h3 class="text-md-left">The FORT Group</h3>
+                                </div>
+                                <div class="project-sub pt-md-3">
+                                    <h2 class="text-md-left">Web Development & Project Management Internship</h2>
+                                </div>
+                                <div class="row justify-content-center justify-content-md-start">
+                                    <div class="skill-pill">Word Press</div>
+                                    <div class="skill-pill">Dashboard</div>
+                                    <div class="skill-pill">Node.JS</div>
+                                </div>
                             </div>
-                            <div class="project-sub pt-md-3">
-                                <h2 class="text-md-left">Digital Marketing Internship</h2>
+                            <div class="col-12 py-4 px-4  col-md-6 offset-md-0">
+                                <img src="img/fort-banner.png" alt="">
                             </div>
-                            <div class="row justify-content-center justify-content-md-start">
-                                <div class="skill-pill">Website</div>
-                                <div class="skill-pill">Figma</div>
-                                <div class="skill-pill">Marketing</div>
-                            </div>
-                        </div>
-                        <div class="col-12 py-4 px-4  col-md-6 offset-md-0">
-                            <img src="/img/sbdc-nj-logo.png" alt="">
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
-    </div>
-</section> <!-- SBDC End-->
-<section>
-    <!-- Julep Start-->
-    <div class="row pt-5">
-        <div class="col-md-10 offset-md-1">
-            <a href="/work/julep.html">
-                <div class="project-bg blue-frame">
-                    <div class="row">
-                        <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
-                            <div class="project-header pt-md-5">
-                                <h3 class="text-md-left">Julep LTD</h3>
+    </section> <!-- FORT End-->
+    <section>
+        <!-- SBDC Start-->
+        <div class="row pt-5">
+            <div class="col-md-10 offset-md-1">
+                <a href="/work/sbdc.html">
+                    <div class="project-bg light-blue-frame">
+                        <div class="row">
+                            <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
+                                <div class="project-header pt-md-5">
+                                    <h3 class="text-md-left" style="font-size: 50px">Small Business Development Center</h3>
+                                </div>
+                                <div class="project-sub pt-md-3">
+                                    <h2 class="text-md-left">Digital Marketing Internship</h2>
+                                </div>
+                                <div class="row justify-content-center justify-content-md-start">
+                                    <div class="skill-pill">Website</div>
+                                    <div class="skill-pill">Figma</div>
+                                    <div class="skill-pill">Marketing</div>
+                                </div>
                             </div>
-                            <div class="project-sub pt-md-3">
-                                <h2 class="text-md-left">Chief Technology Officer & Partner</h2>
+                            <div class="col-12 py-4 px-4  col-md-6 offset-md-0">
+                                <img src="/img/sbdc-nj-logo.png" alt="">
                             </div>
-                            <div class="row justify-content-center justify-content-md-start">
-                                <div class="skill-pill">Management</div>
-                                <div class="skill-pill">Marketing</div>
-                                <div class="skill-pill">Website</div>
-                            </div>
-                        </div>
-                        <div class="col-12 p-4 col-md-6">
-                            <img src="img/julep-banner.png" alt="">
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
-    </div>
-</section><!-- Julep End-->
-<section>
-    <!-- Ladder.io Start-->
-    <div class="row pt-5">
-        <div class="col-md-10 offset-md-1">
-            <a href="/work/ladder-io.html">
-                <div class="project-bg green-frame">
-                    <div class="row">
-                        <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
-                            <div class="project-header pt-md-5">
-                                <h3 class="text-md-left">Ladder.io</h3>
+    </section> <!-- SBDC End-->
+    <section>
+        <!-- Julep Start-->
+        <div class="row pt-5">
+            <div class="col-md-10 offset-md-1">
+                <a href="/work/julep.html">
+                    <div class="project-bg blue-frame">
+                        <div class="row">
+                            <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
+                                <div class="project-header pt-md-5">
+                                    <h3 class="text-md-left">Julep LTD</h3>
+                                </div>
+                                <div class="project-sub pt-md-3">
+                                    <h2 class="text-md-left">Chief Technology Officer & Partner</h2>
+                                </div>
+                                <div class="row justify-content-center justify-content-md-start">
+                                    <div class="skill-pill">Management</div>
+                                    <div class="skill-pill">Marketing</div>
+                                    <div class="skill-pill">Website</div>
+                                </div>
                             </div>
-                            <div class="project-sub pt-md-3">
-                                <h2 class="text-md-left">Google's Software Product Sprint 2021</h2>
+                            <div class="col-12 p-4 col-md-6">
+                                <img src="img/julep-banner.png" alt="">
                             </div>
-                            <div class="row justify-content-center justify-content-md-start">
-                                <div class="skill-pill">Website</div>
-                                <div class="skill-pill">Datastore</div>
-                                <div class="skill-pill">Team Project</div>
-                            </div>
-                        </div>
-                        <div class="col-12 py-4 px-4 col-md-6 offset-md-0">
-                            <img src="img/ladder-home.png" alt="">
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
-    </div>
-</section> <!-- Ladder.io End-->
-<section>
-    <!-- Cody Start-->
-    <div class="row pt-5">
-        <div class="col-md-10 offset-md-1">
-            <a href="https://devpost.com/software/cody-school-work-organizer" target="_blank">
-                <div class="project-bg grey-frame" style="padding-bottom:0px;">
-                    <div class="row justify-content-md-start justify-content-center">
-                        <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
-                            <div class="project-header pt-md-5">
-                                <h3 class="text-md-left">Cody</h3>
+    </section><!-- Julep End-->
+    <section>
+        <!-- Ladder.io Start-->
+        <div class="row pt-5">
+            <div class="col-md-10 offset-md-1">
+                <a href="/work/ladder-io.html">
+                    <div class="project-bg green-frame">
+                        <div class="row">
+                            <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
+                                <div class="project-header pt-md-5">
+                                    <h3 class="text-md-left">Ladder.io</h3>
+                                </div>
+                                <div class="project-sub pt-md-3">
+                                    <h2 class="text-md-left">Google's Software Product Sprint 2021</h2>
+                                </div>
+                                <div class="row justify-content-center justify-content-md-start">
+                                    <div class="skill-pill">Website</div>
+                                    <div class="skill-pill">Datastore</div>
+                                    <div class="skill-pill">Team Project</div>
+                                </div>
                             </div>
-                            <div class="project-sub pt-md-3">
-                                <h2 class="text-md-left">#
-                                    <span style="font-family:arial;">1</span> Education Hack @ HackRU</h2>
+                            <div class="col-12 py-4 px-4 col-md-6 offset-md-0">
+                                <img src="img/ladder-home.png" alt="">
                             </div>
-                            <div class="row justify-content-center justify-content-md-start">
-                                <div class="skill-pill">Twilio</div>
-                                <div class="skill-pill">Bot</div>
-                                <div class="skill-pill">Python</div>
-                            </div>
-                        </div>
-                        <div class=" col-7 col-md-5 ml-md-5">
-                            <img src="/img/cody-mock.png" id="cody-mock" alt="">
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
-    </div>
-</section> <!-- Cody End-->
-<section>
-    <!-- Shell Start-->
-    <div class="row pt-5">
-        <div class="col-md-10 offset-md-1">
-            <a href="https://savetheturtles.appspot.com" target="_blank">
-                <div class="project-bg orange-frame">
-                    <div class="row">
-                        <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
-                            <div class="project-header pt-md-5">
-                                <h3 class="text-md-left">Shell</h3>
+    </section> <!-- Ladder.io End-->
+    <section>
+        <!-- Cody Start-->
+        <div class="row pt-5">
+            <div class="col-md-10 offset-md-1">
+                <a href="https://devpost.com/software/cody-school-work-organizer" target="_blank">
+                    <div class="project-bg grey-frame" style="padding-bottom:0px;">
+                        <div class="row justify-content-md-start justify-content-center">
+                            <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
+                                <div class="project-header pt-md-5">
+                                    <h3 class="text-md-left">Cody</h3>
+                                </div>
+                                <div class="project-sub pt-md-3">
+                                    <h2 class="text-md-left">#
+                                        <span style="font-family:arial;">1</span> Education Hack @ HackRU</h2>
+                                </div>
+                                <div class="row justify-content-center justify-content-md-start">
+                                    <div class="skill-pill">Twilio</div>
+                                    <div class="skill-pill">Bot</div>
+                                    <div class="skill-pill">Python</div>
+                                </div>
                             </div>
-                            <div class="project-sub pt-md-3">
-                                <h2 class="text-md-left">Google's Computer Science Summer Institue 2019</h2>
+                            <div class=" col-7 col-md-5 ml-md-5">
+                                <img src="/img/cody-mock.png" id="cody-mock" alt="">
                             </div>
-                            <div class="row justify-content-center justify-content-md-start">
-                                <div class="skill-pill">Website</div>
-                                <div class="skill-pill">Google</div>
-                                <div class="skill-pill">Team Project</div>
-                            </div>
-                        </div>
-                        <div class="col-12 py-4 px-4 col-md-6 offset-md-0">
-                            <img src="img/shell-home.png" alt="">
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
-    </div>
-</section><!-- Shell End-->
+    </section> <!-- Cody End-->
+    <section>
+        <!-- Shell Start-->
+        <div class="row pt-5">
+            <div class="col-md-10 offset-md-1">
+                <a href="https://savetheturtles.appspot.com" target="_blank">
+                    <div class="project-bg orange-frame">
+                        <div class="row">
+                            <div class="col-12 text-center pl-md-5 col-md-6 project-copy">
+                                <div class="project-header pt-md-5">
+                                    <h3 class="text-md-left">Shell</h3>
+                                </div>
+                                <div class="project-sub pt-md-3">
+                                    <h2 class="text-md-left">Google's Computer Science Summer Institue 2019</h2>
+                                </div>
+                                <div class="row justify-content-center justify-content-md-start">
+                                    <div class="skill-pill">Website</div>
+                                    <div class="skill-pill">Google</div>
+                                    <div class="skill-pill">Team Project</div>
+                                </div>
+                            </div>
+                            <div class="col-12 py-4 px-4 col-md-6 offset-md-0">
+                                <img src="img/shell-home.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section><!-- Shell End-->
 </main>
 <div id="footer"></div>
+
 </html>
-<script src="./dist/SwupScriptsPlugin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script type="module" src="js/main.js"></script>
