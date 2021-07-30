@@ -25,7 +25,7 @@ swup.on('samePage', function() {
 function init() {
     if (document.querySelector('#typed') != null) {
         var typed = new Typed('#typed', {
-            strings: ['Hi, I\'m <br>Andrew^2000','Hi, I\'m glad <br>your he','Hi, I\'m glad <br>you\'re here <br>:)','Hi, I\'m a <br>coffee lover ^1000 ☕️','Hi, I\'m a <br>home chef ^1000 🥘'],
+            strings: ['Hey, I\'m Andrew^2000'],
             typeSpeed: 100,
             backSpeed: 150,
             smartBackspace: true,

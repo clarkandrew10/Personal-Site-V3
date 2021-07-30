@@ -21,7 +21,7 @@ section a:hover {
 
 body {
     height: 100%;
-    background-color: #46627F !important;
+    background-color: #2D2E31 !important;
     overflow-x: hidden !important;
 }
 
@@ -156,7 +156,7 @@ li {
     #bottom,
     #left,
     #right {
-        background: #000;
+        background: #fff;
         position: fixed;
         z-index: 9999;
     }
@@ -234,8 +234,9 @@ nav {
     filter: none !important;
 }
 
+
 .navbar {
-    background-color: #46627F;
+    background-color: #2D2E31;
     position: fixed !important;
     width: 100%;
     z-index: 999 !important;
@@ -291,7 +292,7 @@ nav {
 }
 
 .navbar li a {
-    font-family: Value;
+    font-family: YoungSerif;
     /*    filter: drop-shadow(-2px 2px 1px #000);*/
     transition: .3s;
 }
@@ -416,7 +417,7 @@ nav {
     position: relative;
     transition: .5s;
     padding-bottom: 40px;
-
+    border-bottom: 4px solid #fff;
 }
 
 
@@ -451,12 +452,16 @@ nav {
 .project-bg img {
     position: relative;
     top: 0;
-    filter: drop-shadow(-11px 14px 20px rgba(45, 45, 100, 0.3));
+    filter: drop-shadow(-11px 14px 20px rgba(0, 0, 0, 0.7));
     transition: filter ease 0.5s;
     transition: top ease 0.5s;
     /*border: 5px solid #000;*/
     border-radius: 12px;
     height: 26vh;
+}
+
+.project-bg #cody-mock{
+    filter: none;
 }
 
 .project-bg .skill-pill {
@@ -490,36 +495,36 @@ nav {
 }
 
 .purple-frame{
-    background-color: #310A31;
+    background-color: #2D2E31;
 }
 
 .green-frame {
-    background-color: #75c982;
+    background-color: #2D2E31;
 }
 
 .grey-frame {
-    background-color: #293241;
+    background-color: #2D2E31;
 }
 
 .brown-frame {
-    background-color: #B27C41;
+    background-color: #2D2E31;
 }
 
 .red-frame {
-    background-color: #BA1200;
+    background-color: #2D2E31;
 }
 
 .blue-frame {
-    background-color: #254D32;
+    background-color: #2D2E31;
 }
 
 /*2d9f9d*/
 .orange-frame {
-    background-color: #88633B;
+    background-color: #2D2E31;
 }
 
 .light-blue-frame {
-    background-color: #98c1d9;
+    background-color: #2D2E31;
 }
 
 .project-header h1:hover,
@@ -535,13 +540,14 @@ nav {
 @media only screen and (min-width: 992px) {
 
     .project-bg {
-        border-radius: 12px;
-        border: 7px solid #000;
+        /*border-radius: 12px;*/
+        
+        
     }
 
-    .project-bg:hover {
-        filter: drop-shadow(-11px 14px 0px rgb(45, 45, 45, 1));
-    }
+    /*.project-bg:hover {
+        filter: drop-shadow(-11px 14px 0px rgb(255, 255, 255, .3));
+    }*/
 }
 
 /*------------------------
@@ -837,9 +843,8 @@ hr {
       Links Page
 --------------------------*/
 .links-hero-img img {
-
-    border-radius: 12px;
-    border: 4px solid #000;
+    border-radius: 300px;
+    border: 4px solid #fff;
 }
 
 .links-hero .hero-copy li {
@@ -875,9 +880,9 @@ hr {
 .link-buttons button {
     text-align: left;
     margin-top: 5px;
-    background-color: #fff;
-
-    border: 3px solid #000;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
     padding: 10px;
     transition: .3s;
     font-family: Value;
@@ -896,7 +901,7 @@ hr {
     display: inline-block;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid #000;
+    border-left: 10px solid #fff;
     border-right: 10px solid transparent;
     transition: .3s;
 }
@@ -958,7 +963,7 @@ hr {
     .links-hero-img img {
 
         border-radius: 12px;
-        border: 7px solid #000;
+        border: 7px solid #fff;
     }
 }
 
@@ -983,7 +988,7 @@ hr {
 
 .misc-cards .card {
     margin-top: 1rem;
-    border: 7px solid #000;
+    border: 7px solid #fff;
     background-color: #334252;
     transition: .3s;
     top: 0rem;
@@ -1005,7 +1010,7 @@ hr {
 
 .about-self img {
     border-radius: 12px;
-    border: 7px solid #000;
+    border: 7px solid #fff;
 }
 
 
@@ -1097,8 +1102,8 @@ a .spline-watermark {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    border: 3px solid #000;
-    background-color: #000;
+    border: 3px solid #fff;
+    background-color: #fff;
     width: 50px;
     height: 50px;
     display: block;
@@ -1116,7 +1121,7 @@ a .spline-watermark {
 }
 
 #return-to-top i {
-    color: #fff;
+    color: #000;
     margin: 0;
     position: relative;
     left: 13px;
@@ -1150,7 +1155,7 @@ path:hover {
 
 .line {
     fill: none;
-    stroke: black;
+    stroke: #fff;
     stroke-width: 6;
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
         stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
