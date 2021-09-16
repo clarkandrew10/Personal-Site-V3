@@ -1038,6 +1038,9 @@ a .spline-watermark {
         width: 25vw;
     }
 
+    .side-cards {
+        width: auto !important;
+    }
     #card-container-2 {
         margin-top: -4rem;
     }
