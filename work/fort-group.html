@@ -1,162 +1,209 @@
 <head>
-    <!-- Priority tags. These must come first. -->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1"> <!-- Render Chrome if available or using latest version of Internet Explorer (Recommended). -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Clark.</title>
-    <meta name="description" content="Andrew Philip Clark"> <!-- Keep under 500 characters -->
-    <meta name="rating" content="General">
-    <meta name="robots" content="noindex, nofollow, noodp, noydir, noarchive"> <!-- Disable from all search engines.-->
-    <!-- Open Graph Meta Tags (ogp.me) -->
-    <meta property="og:image" content="http://apclark.org/thumbnail.png"> <!-- Web page thumbnail (can be multiple) -->
-    <meta property="og:site_name" content="Site Name"> <!-- Web site title -->
-    <meta property="og:title" content="Page Title"> <!-- Web page title -->
-    <meta property="og:description" content="Description of this web page"> <!-- Web page description -->
-    <!-- Favicon -->
-    <link href="../img/self-coin.png" rel="icon" type="image/png" />
-    <!-- Pinterest. -->
-    <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!"> <!-- Prevents sharing of content by Pinterest users. -->
-    <!-- ** Stylesheets ** -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- MD Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
-    <!-- Bootstrap Font-Awesome -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- All styling -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- All page transitions-->
-    <link rel="stylesheet" href="/css/swup.css" />
-    <!-- HMTL5 Prefetching -->
-    <link rel="prefetch" href="//apclark.org"> <!-- Prefetch the full page -->
-    <link rel="prefetch" href="//apclark.org/img/self-coin.png"> <!-- Prefetch a single asset -->
-    <script src="https://kit.fontawesome.com/23b123588d.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Priority tags. These must come first. -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
+  <!-- Render Chrome if available or using latest version of Internet Explorer (Recommended). -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no"
+  />
+  <title>Clark.</title>
+  <meta name="description" content="Andrew Philip Clark" />
+  <!-- Keep under 500 characters -->
+  <meta name="rating" content="General" />
+  <meta name="robots" content="noindex, nofollow, noodp, noydir, noarchive" />
+  <!-- Disable from all search engines.-->
+  <!-- Open Graph Meta Tags (ogp.me) -->
+  <meta property="og:image" content="http://apclark.org/thumbnail.png" />
+  <!-- Web page thumbnail (can be multiple) -->
+  <meta property="og:site_name" content="Site Name" />
+  <!-- Web site title -->
+  <meta property="og:title" content="Page Title" />
+  <!-- Web page title -->
+  <meta property="og:description" content="Description of this web page" />
+  <!-- Web page description -->
+  <!-- Favicon -->
+  <link href="../img/self-coin.png" rel="icon" type="image/png" />
+  <!-- Pinterest. -->
+  <meta
+    name="pinterest"
+    content="nopin"
+    description="Sorry, you can't save from my website!"
+  />
+  <!-- Prevents sharing of content by Pinterest users. -->
+  <!-- ** Stylesheets ** -->
+  <!-- Bootstrap -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <!-- MD Bootstrap -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap Font-Awesome -->
+  <link
+    href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+  />
+  <!-- All styling -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- All page transitions-->
+  <link rel="stylesheet" href="/css/swup.css" />
+  <!-- HMTL5 Prefetching -->
+  <link rel="prefetch" href="//apclark.org" />
+  <!-- Prefetch the full page -->
+  <link rel="prefetch" href="//apclark.org/img/self-coin.png" />
+  <!-- Prefetch a single asset -->
+  <script
+    src="https://kit.fontawesome.com/23b123588d.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
 </head>
 <script>
-$(function() {
+  $(function () {
     $("#nav").load("/includes/nav.html");
     $("#footer").load("/includes/footer.html");
     $("#social-links").load("/includes/social-links.html");
-});
+  });
 </script>
 <div id="nav"></div>
 <!-- Hero Start -->
 <main id="swup" class="transition-fade">
-    <section>
-        <div class="row work-hero">
-            <div class="col-10 fort-hero offset-1 d-flex text-center">
-                <div class="col-12 my-auto text-center">
-                    <div class="fort-hero-header">
-                        <h1>The Fort Group</h1>
-                        <div class="sub-copy">
-                            <h2>Web Development & Project Management Internship</h2>
-                            <h2><em>October 2020 - Present</em></h2>
-                            <hr />
-                        </div>
-                    </div>
-                </div>
+  <section>
+    <div class="row work-hero">
+      <div class="col-10 fort-hero offset-1 d-flex text-center">
+        <div class="col-12 my-auto text-center">
+          <div class="fort-hero-header">
+            <h1>The Fort Group</h1>
+            <div class="sub-copy">
+              <h2>Web Development & Project Management Internship</h2>
+              <h2><em>October 2020 - Present</em></h2>
+              <hr />
             </div>
+          </div>
         </div>
-    </section>
-    <!-- Hero End -->
-    <!-- Overview Start -->
-    <section>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+  <!-- Overview Start -->
+  <section>
+    <div class="row">
+      <div class="work-overview d-md-flex pb-4">
+        <div class="col-md-8 offset-md-2 text-lg-start col-10 offset-1">
+          <div class="work-overview-copy">
+            <p>
+              The FORT Group is a full service marketing agency based in
+              Ridgefield Park, NJ. <br />I’m helping rewrite internal processes,
+              maintain client’s sites, and project managing new client’s
+              projects from beginning to end.
+            </p>
+            <p>Currently learning PHP and building Wordpress Theme Templates</p>
+            <p>More to come 🤫</p>
+          </div>
+        </div>
+        <!-- Project Stats End -->
+      </div>
+    </div>
+  </section>
+  <!-- Overview End -->
+  <!-- Challenges Start -->
+  <section>
+    <div class="row">
+      <div class="work-challenges col-md-10 offset-md-1 py-5 px-5">
         <div class="row">
-            <div class="work-overview d-md-flex pb-4">
-                <div class="col-md-8 offset-md-2 text-lg-start col-10 offset-1">
-                    <div class="work-overview-copy">
-                        <p>The FORT Group is a full service marketing agency based in Ridgefield Park, NJ.
-                            <br>I’m helping rewrite internal processes, maintain client’s sites, and project managing new client’s projects from beginning to end.
-                        </p>
-                        <p>Currently learning PHP and building Wordpress Theme Templates</p>
-                        <p>More to come 🤫</p>
-                    </div>
-                </div>
-                <!-- Project Stats End -->
-            </div>
+          <div class="col-10 offset-1">
+            <h3>Tools I use</h3>
+            <p>Figma • Bootstrap • Wordpress • Node.JS • SQL • LAMP Stack</p>
+            <h3>My role</h3>
+            <p>
+              Aid in site development for clients • Support project managers in
+              deadline and milestone scheduling • Assisting with documentation
+              and other project deliverables • Develop and manage a detailed
+              project schedule and work plan • Design and develop Wordpress
+              sites from start to finish
+            </p>
+          </div>
         </div>
-    </section>
-    <!-- Overview End -->
-    <!-- Challenges Start -->
-    <section>
-        <div class="row">
-            <div class=" work-challenges col-md-10 offset-md-1 py-5 px-5 ">
-                <div class="row">
-                    <div class="col-10 offset-1">
-                        <h3>Tools I use</h3>
-                        <p>Figma • Bootstrap • Wordpress • Node.JS • SQL • LAMP Stack</p>
-                        <h3>My role</h3>
-                        <p>Aid in site development for clients • Support project managers in deadline and milestone scheduling • Assisting with documentation and other project deliverables • Develop and manage a detailed project schedule and work plan • Design and develop Wordpress sites from start to finish </p>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  <!-- Challenges End -->
+  <!-- Work Preview Start -->
+  <section>
+    <div class="row justify-content-center mt-5">
+      <div class="img-modal col-lg-6 col-8 mb-4">
+        <img class="img-fluid z-depth-1" src="/img/sunshine-vine-preview.png" />
+        <div class="modal-caption">
+          <p>Theme Homepage</p>
         </div>
-    </section>
-    <!-- Challenges End -->
-    <!-- Work Preview Start -->
-    <section>
-        <div class="row justify-content-center mt-5">
-            <div class="img-modal col-lg-6 col-8 mb-4">
-                <img class="img-fluid z-depth-1" src="/img/sunshine-vine-preview.png">
-                <div class="modal-caption">
-                    <p>Theme Homepage</p>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row justify-content-center mt-5">
+      <div class="img-modal col-lg-6 col-8 mb-4">
+        <img class="img-fluid z-depth-1" src="/img/kuma-preview.png" />
+        <div class="modal-caption">
+          <p>Theme Homepage</p>
         </div>
-    </section>
-    <section>
-        <div class="row justify-content-center mt-5">
-            <div class="img-modal col-lg-6 col-8 mb-4">
-                <img class="img-fluid z-depth-1" src="/img/kuma-preview.png">
-                <div class="modal-caption">
-                    <p>Theme Homepage</p>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row justify-content-center mt-5">
+      <div class="img-modal col-lg-6 col-8 mb-4">
+        <img class="img-fluid z-depth-1" src="/img/tyzen-preview.png" />
+        <div class="modal-caption">
+          <p>Theme Homepage</p>
         </div>
-    </section>
-    <section>
-        <div class="row justify-content-center mt-5">
-            <div class="img-modal col-lg-6 col-8 mb-4">
-                <img class="img-fluid z-depth-1" src="/img/tyzen-preview.png">
-                <div class="modal-caption">
-                    <p>Theme Homepage</p>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  <!-- Work Preview End -->
+  <!-- Related Projects Start -->
+  <section>
+    <div class="row">
+      <div class="col-10 offset-1">
+        <div class="col-lg-6 offset-lg-3">
+          <hr />
+          <div class="text-center p-3">
+            <h1>Check out my other work!</h1>
+          </div>
         </div>
-    </section>
-    <!-- Work Preview End -->
-    <!-- Related Projects Start -->
-    <section>
-        <div class="row">
-            <div class="col-10 offset-1">
-                <div class="col-lg-6 offset-lg-3">
-                    <hr />
-                    <div class="text-center p-3">
-                        <h1>Check out my other work!</h1>
-                    </div>
-                </div>
-                <div class="related-work col-lg-10 m-auto d-flex">
-                    <div class="related-work-card col-lg-4">
-                        <a href="https://savetheturtles.appspot.com" target="_blank">
-                            <img src="/img/shell-thumbnail.png" alt="">
-                            <h3>Shell</h3>
-                            <p>Google's Computer Science Summer Institue 2019</p>
-                        </a>
-                    </div>
-                    <div class="related-work-card col-lg-4">
-                        <a href="/work/sbdc.html">
-                            <img src="/img/sbdc-square-thumbnail.png" alt="">
-                            <h3>Small Business Development Center</h3>
-                            <p>Digital Marketing Internship</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="related-work col-lg-10 m-auto d-flex">
+          <div class="related-work-card col-lg-4">
+            <a href="https://savetheturtles.appspot.com" target="_blank">
+              <img src="/img/shell-thumbnail.png" alt="" />
+              <h3>Shell</h3>
+              <p>Google's Computer Science Summer Institue 2019</p>
+            </a>
+          </div>
+          <div class="related-work-card col-lg-4">
+            <a href="/work/sbdc.html">
+              <img src="/img/sbdc-square-thumbnail.png" alt="" />
+              <h3>Small Business Development Center</h3>
+              <p>Digital Marketing Internship</p>
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </main>
 <!-- Related Projects End -->
 <!-- Footer Start -->
@@ -166,9 +213,28 @@ $(function() {
 <script src="/js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+></script>
 <!--Material Design Boostrap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+  integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+  integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+  crossorigin="anonymous"
+></script>

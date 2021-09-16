@@ -1,52 +1,86 @@
 <script>
-$(function() {
+  $(function () {
     $("#social-links").load("/includes/social-links.html");
-
-});
+  });
 </script>
 
 <body>
-    <a href="#" id="return-to-top"><i class="icon-chevron-up"></i></a>
-    <div id="left"></div>
-    <div id="right"></div>
-    <div id="top"></div>
-    <div id="bottom"></div>
-    <nav class="navbar shadow-none justify-content-lg-center navbar-expand-lg navbar-light ">
-        <a class="mob mr-auto pl-3" href="/"><img src="/img/self-coin.png" height="50" width="50"></a>
-        <button id="nav-toggler" class="menu navbar-toggler hamburger" data-toggle="collapse" da ta-target="#navbarSupportedContent" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')), hideNav()" aria-label="Main Menu">
-            <svg width="50" height="50" viewBox="0 0 100 100">
-                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                <path class="line line2" d="M 20,50 H 80" />
-                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-            </svg>
-        </button>
-        <li class="nav-item desk">
-            <a class="nav-link navbar-brand" href="/">Andrew Clark</a>
+  <a href="#" id="return-to-top"><i class="icon-chevron-up"></i></a>
+  <div id="left"></div>
+  <div id="right"></div>
+  <div id="top"></div>
+  <div id="bottom"></div>
+  <nav
+    class="
+      navbar
+      shadow-none
+      justify-content-lg-center
+      navbar-expand-lg navbar-light
+    "
+  >
+    <a class="mob mr-auto pl-3" href="/"
+      ><img src="/img/self-coin.png" height="50" width="50"
+    /></a>
+    <button
+      id="nav-toggler"
+      class="menu navbar-toggler hamburger"
+      data-toggle="collapse"
+      da
+      ta-target="#navbarSupportedContent"
+      onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')), hideNav()"
+      aria-label="Main Menu"
+    >
+      <svg width="50" height="50" viewBox="0 0 100 100">
+        <path
+          class="line line1"
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+        />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path
+          class="line line3"
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+        />
+      </svg>
+    </button>
+    <li class="nav-item desk">
+      <a class="nav-link navbar-brand" href="/">Andrew Clark</a>
+    </li>
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="nav-content"
+    >
+      <ul class="navbar-nav mr-auto text-center mob" style="display: none">
+        <li class="nav-item p-1">
+          <a href="/">Home</a>
         </li>
-        <div class="collapse navbar-collapse justify-content-center" id="nav-content">
-            <ul class="navbar-nav mr-auto text-center mob" style="display:none;">
-                <li class="nav-item p-1">
-                    <a href="/">Home</a>
-                </li>
-                <li class="nav-item p-1">
-                    <a href="https://drive.google.com/file/d/1fSTNKyRH4Cnx5Iij4AFdymdyKGE_eENz/view?usp=sharing" target="_blank">Resume</a>
-                </li>
-                <li class="nav-item p-1">
-                    <a href="/about">About</a>
-                </li>
-                <hr>
-                <div class="col-7 offset-5">
-                    <div id="social-links"></div>
-                </div>
-            </ul>
-            <ul class="nav ">
-                <li class="nav-item desk">
-                    <a class="nav-link" href="https://drive.google.com/file/d/1fSTNKyRH4Cnx5Iij4AFdymdyKGE_eENz/view?usp=sharing" target="_blank">Resume</a>
-                </li>
-                <li class="nav-item desk">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                
-            </ul>
+        <li class="nav-item p-1">
+          <a
+            href="https://drive.google.com/file/d/1fSTNKyRH4Cnx5Iij4AFdymdyKGE_eENz/view?usp=sharing"
+            target="_blank"
+            >Resume</a
+          >
+        </li>
+        <li class="nav-item p-1">
+          <a href="/about">About</a>
+        </li>
+        <hr />
+        <div class="col-7 offset-5">
+          <div id="social-links"></div>
         </div>
-    </nav>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item desk">
+          <a
+            class="nav-link"
+            href="https://drive.google.com/file/d/1fSTNKyRH4Cnx5Iij4AFdymdyKGE_eENz/view?usp=sharing"
+            target="_blank"
+            >Resume</a
+          >
+        </li>
+        <li class="nav-item desk">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</body>
