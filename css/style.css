@@ -27,11 +27,11 @@ body {
 
 /*3E6D8E*/
 #swup {
-    -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2.5s; /* Firefox < 16 */
-        -ms-animation: fadein 2.5s; /* Internet Explorer */
-         -o-animation: fadein 2.5s; /* Opera < 12.1 */
-            animation: fadein 2.5s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -176,7 +176,7 @@ li {
 @media only screen and (min-width: 992px) {
     .hero-banner h1 {
         font-size: 77px !important;
-        filter: drop-shadow(-5px 5px 0px #000);
+        /* filter: drop-shadow(-5px 5px 0px #000); */
     }
 
     nav {
@@ -395,8 +395,8 @@ nav {
 
 .hero-banner h1 {
     color: #fff;
-    font-size: 35px;
-    filter: drop-shadow(-4px 3px 0px #000);
+    font-size: 50px;
+
 }
 
 .hero-banner h2 {
