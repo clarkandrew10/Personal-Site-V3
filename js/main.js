@@ -36,7 +36,6 @@ function init() {
 }
 init();
 document.addEventListener("swup:contentReplaced", init);
-
 document.addEventListener("swup:contentReplaced", (event) => {
 	try {
 		swup.options.elements.forEach((selector) => {
