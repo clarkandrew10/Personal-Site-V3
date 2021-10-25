@@ -1,153 +1,278 @@
 <head>
-    <!-- Priority tags. These must come first. -->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1"> <!-- Render Chrome if available or using latest version of Internet Explorer (Recommended). -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Clark.</title>
-    <meta name="description" content="Andrew Philip Clark"> <!-- Keep under 500 characters -->
-    <meta name="rating" content="General">
-    <meta name="robots" content="noindex, nofollow, noodp, noydir, noarchive"> <!-- Disable from all search engines.-->
-    <!-- Open Graph Meta Tags (ogp.me) -->
-    <meta property="og:image" content="http://apclark.org/thumbnail.png"> <!-- Web page thumbnail (can be multiple) -->
-    <meta property="og:site_name" content="Site Name"> <!-- Web site title -->
-    <meta property="og:title" content="Page Title"> <!-- Web page title -->
-    <meta property="og:description" content="Description of this web page"> <!-- Web page description -->
-    <!-- Favicon -->
-    <link href="../img/self-coin.png" rel="icon" type="image/png" />
-    <!-- Pinterest. -->
-    <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!"> <!-- Prevents sharing of content by Pinterest users. -->
-    <!-- ** Stylesheets ** -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- MD Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
-    <!-- Bootstrap Font-Awesome -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- All styling -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- All page transitions-->
-    <link rel="stylesheet" href="/css/swup.css" />
-    <!-- HMTL5 Prefetching -->
-    <link rel="prefetch" href="//apclark.org"> <!-- Prefetch the full page -->
-    <link rel="prefetch" href="//apclark.org/img/self-coin.png"> <!-- Prefetch a single asset -->
-    <script src="https://kit.fontawesome.com/23b123588d.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!-- Priority tags. These must come first. -->
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
+	<!-- Render Chrome if available or using latest version of Internet Explorer (Recommended). -->
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=no"
+	/>
+	<title>Clark.</title>
+	<meta name="description" content="Andrew Philip Clark" />
+	<!-- Keep under 500 characters -->
+	<meta name="rating" content="General" />
+	<meta name="robots" content="noindex, nofollow, noodp, noydir, noarchive" />
+	<!-- Disable from all search engines.-->
+	<!-- Open Graph Meta Tags (ogp.me) -->
+	<meta property="og:image" content="http://apclark.org/thumbnail.png" />
+	<!-- Web page thumbnail (can be multiple) -->
+	<meta property="og:site_name" content="Site Name" />
+	<!-- Web site title -->
+	<meta property="og:title" content="Page Title" />
+	<!-- Web page title -->
+	<meta property="og:description" content="Description of this web page" />
+	<!-- Web page description -->
+	<!-- Favicon -->
+	<link href="../img/self-coin.png" rel="icon" type="image/png" />
+	<!-- Pinterest. -->
+	<meta
+		name="pinterest"
+		content="nopin"
+		description="Sorry, you can't save from my website!"
+	/>
+	<!-- Prevents sharing of content by Pinterest users. -->
+	<!-- ** Stylesheets ** -->
+	<!-- Bootstrap -->
+	<link
+		rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous"
+	/>
+	<!-- MD Bootstrap -->
+	<link
+		href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+		rel="stylesheet"
+	/>
+	<!-- Bootstrap Font-Awesome -->
+	<link
+		href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+		rel="stylesheet"
+	/>
+	<!-- Bootstrap Icons -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+	/>
+	<!-- All styling -->
+	<link rel="stylesheet" href="/css/style.css" />
+	<!-- All page transitions-->
+	<link rel="stylesheet" href="/css/swup.css" />
+	<!-- HMTL5 Prefetching -->
+	<link rel="prefetch" href="//apclark.org" />
+	<!-- Prefetch the full page -->
+	<link rel="prefetch" href="//apclark.org/img/self-coin.png" />
+	<!-- Prefetch a single asset -->
+	<script
+		src="https://kit.fontawesome.com/23b123588d.js"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"
+	></script>
 </head>
 <script>
-$(function() {
-    $("#nav").load("/includes/nav.html");
-    $("#footer").load("/includes/footer.html");
-    $("#social-links").load("/includes/social-links.html");
-});
+	$(function () {
+		$("#nav").load("/includes/nav.html");
+		$("#footer").load("/includes/footer.html");
+		$("#social-links").load("/includes/social-links.html");
+	});
 </script>
 <div id="nav"></div>
 <main id="swup" class="transition-fade">
-    <section>
-        <div class="row about-hero justify-content-center justify-content-md-start">
-            <div class="col-9 col-md-4 offset-md-2 order-2 order-md-1">
-                <div class="about-self">
-                    <img src="img/self.png" alt="">
-                </div>
-            </div>
-            <div class="col-9 offset-md-0 col-md-5 my-auto order-1 order-md-2">
-                <div class="about-copy">
-                    <!-- No this isn't best practice, what are you my mother?-->
-                    <div class="about-header text-md-start text-center">
-                        <h1>I'm Andrew</h1>
-                    </div>
-                    <div class="about-sub text-md-start text-center">
-                        <p>I’m a student at Ramapo College of New Jersey studying computer science, hoping to pursue a career in front-end development. I’m driven by the opportunity to leave a positive impact on millions of people through the mediums that give me joy. I’m passionate about cooking so much so that if this coding thing doesn’t work out I’ll probably be working in a kitchen peeling carrots or something... <br>I only drink La Croix Seltzer and dark roast coffee (yes, hot coffee year round)<br> Currently living in Rutherford, NJ - Obsessed with using Figma and Notion
-                        </p>
-                    </div>
-                    <div id="social-links" class="text-center"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="row misc-cards">
-            <div class="offset-2 col-9">
-                <div class="col-md-4 col-10">
-                    <div class="about-header">
-                        <h1>Misc, non-coding stuff:</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card-container col-8 col-md-3" id="card-container-1">
-                        <a href="https://spline.design/" target="_blank">
-                            <div class="card">
-                                <img src="/img/spinning-squares.gif" alt="Spinng Squares 3D Animation">
-                                <div class="card-body">
-                                    <p class="card-text">Played around in <a href="https://spline.design/" target="_blank">Spline.design</a></p>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card">
-                            <img class="card-img-top" src="img/hackru.jpg" alt="Hack Rutgers #1 Education Hack">
-                            <div class="card-body">
-                                <p class="card-text">Me winning a Corsair K70 mk.II (which I eventually sold...) for best Education Hack @ HackRU Fall 2019</p>
-                            </div>
-                        </div>
-                        <a href="https://www.apclark.photos" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="/img/Screen%20Shot%202021-07-14%20at%208.16.16%20PM.png" alt="Photo Gallery">
-                                <div class="card-body">
-                                    <p class="card-text">View all of the images that don't make it to Instagram on my self-hosted gallery</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card-container col-8 col-md-3" id="card-container-2">
-                        <a href="https://cdn.flipsnack.com/widget/v2/widget.html?hash=ciwdae5hp8&t=1622037491" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="/img/rv-mag-cover.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <p class="card-text">My Father and I are featured on Rivervale Neighbors Magazine for Father's Day 2021.<br>Click to read full article (pg.8)</p>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card">
-                            <a href="https://20200427t175230-dot-aclark.appspot.com/" target="_blank">
-                                <img class="card-img-top" src="img/v1-site.png" alt="first website">
-                                <div class="card-body">
-                                    <p class="card-text">This is my 3rd iteration of my website. <br>Click to view my first version</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-container col-8 col-md-3" id="card-container-3">
-                        <a href="https://www.notion.so/apclark/media-list-3db29770a7714d7485559f56cbfe9b0d" target="_blank">
-                            <div class="card">
-                                <img class="card-img-top" src="img/steal-cover.jpg" alt="How to steal like an artist">
-                                <div class="card-body">
-                                    <p class="card-text">My favorite book right now is <em>"Steal Like an Artist"</em> by Austin Kleon<br>Click to find the rest of my media list</p>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card">
-                            <img class="card-img-top" src="img/cssi.jpg" alt="Computer Science Summer Institute 2019 NYC">
-                            <div class="card-body">
-                                <p class="card-text">My CSSI family, I miss them 🥺</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section>
+		<div class="row about-hero justify-content-center justify-content-md-start">
+			<div class="col-9 col-md-4 offset-md-2 order-2 order-md-1">
+				<div class="about-self">
+					<img src="img/self.png" alt="" />
+				</div>
+			</div>
+			<div class="col-9 offset-md-0 col-md-5 my-auto order-1 order-md-2">
+				<div class="about-copy">
+					<!-- No this isn't best practice, what are you my mother?-->
+					<div class="about-header text-md-start text-center">
+						<h1>👋 I'm Andrew...</h1>
+					</div>
+					<div class="about-sub text-md-start text-center">
+						<p>
+							I’m a student at Ramapo College of New Jersey studying computer
+							science, hoping to pursue a career in front-end development. I’m
+							driven by the opportunity to leave a positive impact on millions
+							of people through the mediums that give me joy. In my spare time
+							I'm pretty passionate about cooking so much so that if this coding
+							thing doesn’t work out I’ll probably be working in a kitchen
+							peeling carrots or something...
+							<br />
+							<br />
+							Reach out if you want to discuss opportunities or just to geek out
+							about coffee!
+						</p>
+					</div>
+					<div id="social-links" class="text-center"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="row misc-cards">
+			<div class="offset-2 col-9">
+				<div class="col-md-4 col-10">
+					<div class="about-header">
+						<h1>Misc, non-coding stuff:</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card-container col-8 col-md-3" id="card-container-1">
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/hackru.jpg"
+								alt="Hack Rutgers #1 Education Hack"
+							/>
+							<div class="card-body">
+								<p class="card-text">
+									Me winning a Corsair K70 mk.II (which I eventually sold...)
+									for best Education Hack @ HackRU Fall 2019
+								</p>
+							</div>
+						</div>
+						<a href="https://www.apclark.photos" target="_blank">
+							<div class="card">
+								<img
+									class="card-img-top"
+									src="/img/Screen%20Shot%202021-07-14%20at%208.16.16%20PM.png"
+									alt="Photo Gallery"
+								/>
+								<div class="card-body">
+									<p class="card-text">
+										View all of the images that don't make it to Instagram on my
+										self-hosted gallery<span
+											class="pl-1 fas fa-external-link-alt fa-xs"
+										></span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card-container col-8 col-md-3" id="card-container-2">
+						<a
+							href="https://cdn.flipsnack.com/widget/v2/widget.html?hash=ciwdae5hp8&t=1622037491"
+							target="_blank"
+						>
+							<div class="card">
+								<img
+									class="card-img-top"
+									src="/img/rv-mag-cover.png"
+									alt="Card image cap"
+								/>
+								<div class="card-body">
+									<p class="card-text">
+										My Father and I are featured on Rivervale Neighbors Magazine
+										for Father's Day 2021.<br />Click to read full article
+										(pg.8)<span
+											class="pl-1 fas fa-external-link-alt fa-xs"
+										></span>
+									</p>
+								</div>
+							</div>
+						</a>
+						<div class="card">
+							<a
+								href="https://20200427t175230-dot-aclark.appspot.com/"
+								target="_blank"
+							>
+								<img
+									class="card-img-top"
+									src="img/v1-site.png"
+									alt="first website"
+								/>
+								<div class="card-body">
+									<p class="card-text">
+										This is my 3rd iteration of my website. <br />Click to view
+										my first version<span
+											class="pl-1 fas fa-external-link-alt fa-xs"
+										></span>
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="card-container col-8 col-md-3" id="card-container-3">
+						<a
+							href="https://www.notion.so/apclark/media-list-3db29770a7714d7485559f56cbfe9b0d"
+							target="_blank"
+						>
+							<div class="card">
+								<img
+									class="card-img-top"
+									src="img/steal-cover.jpg"
+									alt="How to steal like an artist"
+								/>
+								<div class="card-body">
+									<p class="card-text">
+										My favorite book right now is
+										<em>"Steal Like an Artist"</em> by Austin Kleon<br />Click
+										to find the rest of my media list<span
+											class="pl-1 fas fa-external-link-alt fa-xs"
+										></span>
+									</p>
+								</div>
+							</div>
+						</a>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/cssi.jpg"
+								alt="Computer Science Summer Institute 2019 NYC"
+							/>
+							<div class="card-body">
+								<p class="card-text">My CSSI family, I miss them 🥺</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </main>
 <div id="footer"></div>
 <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+<script
+	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"
+></script>
+<script
+	type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script defer src="js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"
+></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"
+></script>
+<script
+	type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+	integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+	crossorigin="anonymous"
+></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+	integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+	crossorigin="anonymous"
+></script>
