@@ -113,7 +113,8 @@ a:focus {
 
 p,
 a,
-a p {
+a p,
+li {
 	font-family: Value, sans-serif;
 	color: #fff;
 }
@@ -930,6 +931,8 @@ hr {
 	margin-left: 10px;
 	color: #fff;
 	transition: 0.3s;
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 .setup .setup-subheader a:hover,
