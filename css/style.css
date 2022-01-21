@@ -976,7 +976,7 @@ hr {
       About Page
 --------------------------*/
 .about-hero,
-.misc-cards {
+.misc-cards:not(.card-container.misc-cards) {
 	padding-top: 5rem;
 }
 
@@ -1083,7 +1083,8 @@ a .spline-watermark {
 	font-size: 15px !important;
 }
 
-.footer-copy a {
+.footer-copy a,
+.about-sub a {
 	color: #cacaca;
 	transition: 0.2s;
 }
@@ -1095,7 +1096,8 @@ a .spline-watermark {
 }
 
 .report a:hover,
-.footer-copy a:hover {
+.footer-copy a:hover,
+.about-sub a:hover {
 	opacity: 0.5;
 }
 
