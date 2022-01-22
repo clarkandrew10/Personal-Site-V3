@@ -992,6 +992,8 @@ hr {
 
 .card {
 	background-color: transparent !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
 }
 .card-img-top {
 	border-radius: 4px;

@@ -23,9 +23,13 @@ function init() {
 	if (document.querySelector("#typed") != null) {
 		try {
 			var typed = new Typed("#typed", {
-				strings: ["Hey, I'm Andrew^3000"],
+				strings: [
+					"Hey, I'm Andrew^2000",
+					"Hey, I'm an at home chef^2000",
+					"Hey, I'm a coffee nerd^3000",
+				],
 				typeSpeed: 100,
-				backSpeed: 150,
+				backSpeed: 100,
 				smartBackspace: true,
 				loop: true,
 			});
