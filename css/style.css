@@ -1067,6 +1067,22 @@ a .spline-watermark {
 /*------------------------
       Footer
 --------------------------*/
+a.home {
+	color: #fff;
+	font-size: 21px;
+	font-family: Young Serif;
+}
+a.home .fas {
+	right: 10px;
+	position: relative;
+	transition: 0.3s;
+}
+a.home:hover {
+	color: #cacaca;
+}
+a.home:hover .fas {
+	right: 20px;
+}
 
 .footer-copy h1 {
 	font-family: Young Serif;
